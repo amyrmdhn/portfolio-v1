@@ -8,11 +8,11 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '16px',
+      padding: '20px',
     },
     extend: {
       colors: {
-        primary: '#14b8a6',
+        primary: '#6366f1',
         secondary: '#64748b',
         dark: '#0f172a',
       },
