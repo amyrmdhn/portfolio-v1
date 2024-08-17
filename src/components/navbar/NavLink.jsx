@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavLink = ({ name, href }) => {
   return (
     <li className="group hover:bg-indigo-50 lg:hover:bg-transparent">

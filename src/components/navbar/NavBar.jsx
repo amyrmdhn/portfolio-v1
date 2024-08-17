@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 const navigation = [
   { name: "Home", href: "#home" },
   { name: "About Me", href: "#about" },
-  { name: "Portfolio", href: "#" },
+  { name: "Portfolio", href: "#portfolio" },
   { name: "Clients", href: "#" },
   { name: "Blog", href: "#" },
   { name: "Contact", href: "#" },
