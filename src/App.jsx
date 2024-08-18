@@ -5,6 +5,7 @@ import NavBar from "./components/navbar/NavBar";
 import Portfolio from "./components/portfolio/Portfolio";
 import FeaturedIn from "./components/featuredin/FeaturedIn";
 import Blog from "./components/blog/Blog";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Portfolio />
       <FeaturedIn />
       <Blog />
+      <Contact />
     </>
   );
 };
