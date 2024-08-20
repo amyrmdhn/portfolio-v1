@@ -6,8 +6,8 @@ const navigation = [
   { name: "About Me", href: "#about" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "Clients", href: "#clients" },
-  { name: "Blog", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Blog", href: "#blog" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const NavBar = () => {

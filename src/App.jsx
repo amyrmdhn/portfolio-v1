@@ -8,6 +8,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import FeaturedIn from "./components/featuredin/FeaturedIn";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <FeaturedIn />
       <Blog />
       <Contact />
+      <Footer />
       <ToastContainer
         className="Toastify__toast-container--top-right"
         position="bottom-right"
