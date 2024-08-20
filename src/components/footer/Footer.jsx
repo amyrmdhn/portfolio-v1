@@ -1,9 +1,9 @@
 import LinkItem from "./LinkItem";
 
 const tags = [
-  { href: "#", name: "Mobile Development" },
-  { href: "#", name: "Web Development" },
-  { href: "#", name: "Game MMORPG" },
+  { href: "#blog", name: "Mobile Development" },
+  { href: "#blog", name: "Web Development" },
+  { href: "#blog", name: "Game MMORPG" },
 ];
 
 const navigation = [
@@ -52,19 +52,31 @@ const Footer = () => {
         <div className="w-full border-t border-slate-700 pt-10">
           <p className="text-center text-sm font-medium text-slate-500 pb-3">
             Build by{" "}
-            <a href="" className="font-bold text-primary hover:text-indigo-300">
+            <a href="#home" className="font-bold text-primary hover:text-indigo-300">
               Amy Ramadhan
             </a>{" "}
             using{" "}
-            <a href="" className="font-bold text-sky-500 hover:text-sky-300">
+            <a
+              href="https://vitejs.dev/"
+              target="_blank"
+              className="font-bold text-sky-500 hover:text-sky-300"
+            >
               VITE
             </a>
             ,{" "}
-            <a href="" className="font-bold text-sky-500 hover:text-sky-300">
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              className="font-bold text-sky-500 hover:text-sky-300"
+            >
               React
             </a>
             , &{" "}
-            <a href="" className="font-bold text-sky-500 hover:text-sky-300">
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              className="font-bold text-sky-500 hover:text-sky-300"
+            >
               TailwindCSS
             </a>
           </p>
