@@ -10,7 +10,7 @@ const Contact = () => {
       message: "",
     },
     validationSchema: validationScheme,
-    onSubmit: async (values) => {
+    onSubmit: async (_, {resetForm}) => {
       try {
         if (Math.random() > 0.5) {
           await new Promise((resolve) => setTimeout(resolve, 1000));
