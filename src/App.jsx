@@ -22,8 +22,7 @@ const App = () => {
       <Contact />
       <Footer />
       <ToastContainer
-        className="Toastify__toast-container--top-right"
-        position="bottom-right"
+        position="top-right"
         autoClose={2500}
         hideProgressBar
         newestOnTop
