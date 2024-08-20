@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 import Hero from "./components/hero/hero";
 import About from "./components/about/About";
 import NavBar from "./components/navbar/NavBar";
@@ -17,6 +19,19 @@ const App = () => {
       <FeaturedIn />
       <Blog />
       <Contact />
+      <ToastContainer
+        className="Toastify__toast-container--top-right"
+        position="bottom-right"
+        autoClose={2500}
+        hideProgressBar
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+        theme="colored"
+      />
     </>
   );
 };

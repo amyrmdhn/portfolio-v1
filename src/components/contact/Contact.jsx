@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { toast } from "react-toastify";
 import validationScheme from "./validationSchema";
 
 const Contact = () => {
@@ -9,9 +10,19 @@ const Contact = () => {
       message: "",
     },
     validationSchema: validationScheme,
-    onSubmit: (values, { resetForm }) => {
-      console.log(`Berhasil kirim dengan email ${values.email}`);
-      resetForm();
+    onSubmit: async (values) => {
+      try {
+        if (Math.random() > 0.5) {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          toast.success("Message has been sent");
+          resetForm();
+        } else {
+          throw new Error("Something went wrong");
+        }
+      } catch (error) {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        toast.error(error.message);
+      }
     },
   });
 
@@ -89,8 +100,14 @@ const Contact = () => {
               )}
             </div>
             <div className="w-full px-4">
-              <button className="w-full rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700">
-                Send
+              <button
+                className={`w-full rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700 flex items-center justify-center ${
+                  formik.isSubmitting
+                    ? "h-12 bg-indigo-100 hover:bg-indigo-100  cursor-not-allowed pointer-events-none"
+                    : ""
+                }`}
+              >
+                {formik.isSubmitting ? <div className="loader"></div> : "Send"}
               </button>
             </div>
           </div>
