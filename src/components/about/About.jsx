@@ -26,7 +26,7 @@ const navigation = [
 
 const About = () => {
   return (
-    <section id="about" className="pt-36 pb-32 dark:bg-dark">
+    <section id="about" className="pb-32 pt-36 dark:bg-dark">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="mb-10 w-full px-4 lg:w-1/2">
@@ -45,7 +45,7 @@ const About = () => {
             <h3 className="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">
               Let's connect
             </h3>
-            <p className="max-w-xl mb-6 text-base font-medium text-secondary lg:text-lg">
+            <p className="mb-6 max-w-xl text-base font-medium text-secondary lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               quos, hic animi quasi ipsum exercitationem ipsam incidunt
               voluptatem.

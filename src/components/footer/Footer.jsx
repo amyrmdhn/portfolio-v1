@@ -19,7 +19,7 @@ const Footer = () => {
   const currentYear = () => new Date().getFullYear();
 
   return (
-    <footer className="bg-indigo-950 pt-24 pb-12">
+    <footer className="bg-indigo-950 pb-12 pt-24">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/2">
@@ -50,9 +50,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full border-t border-slate-700 pt-10">
-          <p className="text-center text-sm font-medium text-slate-500 pb-3">
+          <p className="pb-3 text-center text-sm font-medium text-slate-500">
             Build by{" "}
-            <a href="#home" className="font-bold text-primary hover:text-indigo-300">
+            <a
+              href="#home"
+              className="font-bold text-primary hover:text-indigo-300"
+            >
               Amy Ramadhan
             </a>{" "}
             using{" "}

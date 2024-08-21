@@ -13,4 +13,4 @@ const validationScheme = () =>
       .required("Message is required"),
   });
 
-export default validationScheme; 
+export default validationScheme;

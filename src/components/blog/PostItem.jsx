@@ -15,9 +15,9 @@ const PostItem = ({ title, image, alt, description }) => {
         <img
           src={image}
           alt={alt}
-          className="w-full h-56 object-cover object-center"
+          className="h-56 w-full object-cover object-center"
         />
-        <div className="py-8 px-6">
+        <div className="px-6 py-8">
           <h3>
             <a
               href="#"
@@ -33,7 +33,7 @@ const PostItem = ({ title, image, alt, description }) => {
           <a
             href="#"
             onClick={handleClick}
-            className="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700"
           >
             Read more
           </a>

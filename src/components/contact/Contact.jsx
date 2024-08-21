@@ -10,7 +10,7 @@ const Contact = () => {
       message: "",
     },
     validationSchema: validationScheme,
-    onSubmit: async (_, {resetForm}) => {
+    onSubmit: async (_, { resetForm }) => {
       try {
         if (Math.random() > 0.5) {
           await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -27,14 +27,14 @@ const Contact = () => {
   });
 
   return (
-    <section id="contact" className="pt-36 pb-32 dark:bg-slate-800">
+    <section id="contact" className="pb-32 pt-36 dark:bg-slate-800">
       <div className="container">
         <div className="w-full px-4">
           <div className="mx-auto mb-16 max-w-xl text-center">
-            <h4 className="mb-2 text-base font-semibold text-primary uppercase">
+            <h4 className="mb-2 text-base font-semibold uppercase text-primary">
               Contact
             </h4>
-            <h2 className="mb-4 text-3xl font-bold text-dark  dark:text-white sm:text-4xl lg:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Send Me Message
             </h2>
             <p className="text-md font-medium text-secondary md:text-lg">
@@ -52,7 +52,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                className={`w-full rounded-md bg-slate-50 p-3 text-dark border border-indigo-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary`}
+                className={`w-full rounded-md border border-indigo-400 bg-slate-50 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary`}
                 {...formik.getFieldProps("name")}
               />
               {formik.touched.name && formik.errors.name ? (
@@ -70,7 +70,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full rounded-md bg-slate-50 p-3 text-dark border border-indigo-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                className="w-full rounded-md border border-indigo-400 bg-slate-50 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                 {...formik.getFieldProps("email")}
               />
               {formik.touched.email && formik.errors.email ? (
@@ -88,7 +88,7 @@ const Contact = () => {
               <textarea
                 type="email"
                 id="email"
-                className="h-32 w-full rounded-md bg-slate-50 p-3 text-dark border border-indigo-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary "
+                className="h-32 w-full rounded-md border border-indigo-400 bg-slate-50 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                 {...formik.getFieldProps("message")}
               ></textarea>
               {formik.touched.message && formik.errors.message ? (
@@ -101,9 +101,9 @@ const Contact = () => {
             </div>
             <div className="w-full px-4">
               <button
-                className={`w-full rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700 flex items-center justify-center ${
+                className={`flex w-full items-center justify-center rounded-xl bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-600 hover:shadow-lg active:bg-indigo-700 ${
                   formik.isSubmitting
-                    ? "h-12 bg-indigo-100 hover:bg-indigo-100  cursor-not-allowed pointer-events-none"
+                    ? "pointer-events-none h-12 cursor-not-allowed bg-indigo-100 hover:bg-indigo-100"
                     : ""
                 }`}
               >
